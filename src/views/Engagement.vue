@@ -65,16 +65,14 @@ const weddingDay = dayjs("2024-09-21").diff(today, "days");
         </div>
       </div>
     </div>
-    <div class="w-full h-full z-10 mb-12 flex items-center justify-center">
-    <img src="/us.png" alt="us" />
-</div>
+ 
     <div class="w-full h-full grid justify-end">
       <div
         class="px-12 relative grid bottom-0 left-0 md:left-24 text-center md:text-right w-full h-full leading-loose justify-start items-start"
       >
         <h4 class="text-[1rem] md:text-[1.5rem]  md:mt-0">میزبانی عقد:</h4>
         <p class="text-[1rem]">
-          خیابان پاسداران بین بوستان دهم و گلستان یکم رو به روی کلنتری پاسداران،
+          خیابان پاسداران بین بوستان دهم و گلستان یکم رو به روی کلانتری پاسداران،
           دفتر ازدواج طلایی ساعت ۱۷:۱۵
         </p>
         <h4 class="text-[1rem] md:text-[1.5rem] mt-16 md:mt-0">میزبانی شام:</h4>
