@@ -29,7 +29,7 @@ router.push("/location")
 
 <template>
   <div
-    class="relative flex justify-between items-start md:items-center min-h-screen min-w-screen h-full w-full overflow-hidden"
+    class="relative flex justify-between items-center md:items-center min-h-screen max-h-screen min-w-screen h-full w-full overflow-hidden"
   >
     <img
       src="/17901171.png"
