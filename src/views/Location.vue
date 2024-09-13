@@ -86,7 +86,7 @@ const palaceopenNeshan = () => {
           </div>
         </div>
         <div class="flex flex-col md:flex-row gap-4">
-          <img src="/palace.jpg" class="w-[300px] h-auto rounded-xl" />
+          <img src="/palace.jpg" class="w-full md:w-[300px]  h-auto rounded-xl" />
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.3552142575755!2d51.35658101317705!3d35.79324463133902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0805e1df5fff%3A0x5005dbbf6110316!2sEspinas%20Palace%20Hotel!5e0!3m2!1sen!2s!4v1726230264175!5m2!1sen!2s"
             class="w-full h-[300px] rounded-xl"
@@ -139,7 +139,7 @@ const palaceopenNeshan = () => {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <img src="/office.png" class="w-[300px] h-auto rounded-xl" />
+          <img src="/office.png" class="w-full md:w-[300px]  h-auto rounded-xl" />
         </div>
       </div>
     </div>
