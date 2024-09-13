@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "nas";
+  src: url("/IranNastaliq.ttf");
+}
+
+@font-face {
+  font-family: 'yek';
+  src: url('/IRANYekanXFaNum-Regular.ttf');
+}
+
+*{
+  font-family:  'yek';
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color:#7B797A;
+}
+
