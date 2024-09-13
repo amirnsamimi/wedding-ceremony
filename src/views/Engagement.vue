@@ -24,7 +24,7 @@ const weddingDay = dayjs("2024-09-21").diff(today, "days");
     />
     <img
       src="/17901180.png"
-      class="w-2/3 md:w-1/3 absolute -right-16 top-2/3 md:top-1/3 -rotate-45 object-contain"
+      class="w-2/3 md:w-1/3 absolute -right-16 top-1/2 md:top-1/3 -rotate-45 object-contain"
       alt=""
     />
     <div class="w-full h-full min-h-screen  grid justify-start items-start">
@@ -58,15 +58,15 @@ const weddingDay = dayjs("2024-09-21").diff(today, "days");
         </div>
         <div class="flex justify-center  md:mt-12 text-center items-center">
           <div
-            class="date-time  text-[2rem] flex flex-col md:text-[4rem]"
+            class="date-time   text-center text-[2rem] justify-center items-center w-full flex flex-col md:text-[4rem]"
           >
-            {{ weddingDay }} <span class="text-base"> روز باقی مانده </span>
+           <div class="bg-[#F3F2ED] text-[#b6a781] rounded-full w-12 h-12 md:w-24 md:h-24">{{ weddingDay }} </div>  <span class="text-base  text-nowrap"> روز باقی مانده </span>
           </div>
         </div>
       </div>
     </div>
  
-    <div class=" grid justify-end min-h-screen">
+    <div class=" grid justify-end w-full min-h-max mb-24">
       <div
         class="px-12 relative grid bottom-0 left-0 md:left-24 text-center md:text-right w-full h-max gap-6  justify-start items-start"
       >
