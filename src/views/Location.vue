@@ -9,15 +9,15 @@ const officeopenWaze = () => {
   window.open(wazeUrl, "_blank");
 };
 
-const officeopenBalad = () => {
-  const baladUrl = `balad://navigate?location=${35.7695431},${51.4595716}`;
-  window.open(baladUrl, "_blank");
-};
+// const officeopenBalad = () => {
+//   const baladUrl = `balad://navigate?location=${35.7695431},${51.4595716}`;
+//   window.open(baladUrl, "_blank");
+// };
 
-const officeopenNeshan = () => {
-  const neshanUrl = `neshan://navigate/destination?lat=${35.7695431}&lng=${51.4595716}`;
-  window.open(neshanUrl, "_blank");
-};
+// const officeopenNeshan = () => {
+//   const neshanUrl = `neshan://navigate/destination?lat=${35.7695431}&lng=${51.4595716}`;
+//   window.open(neshanUrl, "_blank");
+// };
 
 const palaceopenGoogleMaps = () => {
   const googleMapsUrl = `https://www.google.com/maps?q=${35.7927804},${51.3563418}`;
@@ -29,15 +29,15 @@ const palaceopenWaze = () => {
   window.open(wazeUrl, "_blank");
 };
 
-const palaceopenBalad = () => {
-  const baladUrl = `balad://navigate?location=${35.7927804},${51.3563418}`;
-  window.open(baladUrl, "_blank");
-};
+// const palaceopenBalad = () => {
+//   const baladUrl = `balad://navigate?location=${35.7927804},${51.3563418}`;
+//   window.open(baladUrl, "_blank");
+// };
 
-const palaceopenNeshan = () => {
-  const neshanUrl = `neshan://navigate/destination?lat=${35.7927804}&lng=${51.3563418}`;
-  window.open(neshanUrl, "_blank");
-};
+// const palaceopenNeshan = () => {
+//   const neshanUrl = `neshan://navigate/destination?lat=${35.7927804}&lng=${51.3563418}`;
+//   window.open(neshanUrl, "_blank");
+// };
 </script>
 <template>
   <div class="wrapper">
@@ -71,7 +71,7 @@ const palaceopenNeshan = () => {
             >
               Waze
             </button>
-            <button
+            <!-- <button
               class="bg-[#bdc4ba] text-black px-4 py-2 w-max rounded-xl"
               @click="palaceopenBalad"
             >
@@ -82,7 +82,7 @@ const palaceopenNeshan = () => {
               @click="palaceopenNeshan"
             >
               نشان
-            </button>
+            </button> -->
           </div>
         </div>
         <div class="flex flex-col md:flex-row gap-4">
@@ -116,7 +116,7 @@ const palaceopenNeshan = () => {
             >
               Waze
             </button>
-            <button
+            <!-- <button
               class="bg-[#bdc4ba] text-black px-4 py-2 w-max rounded-xl"
               @click="officeopenBalad"
             >
@@ -127,7 +127,7 @@ const palaceopenNeshan = () => {
               @click="officeopenNeshan"
             >
               نشان
-            </button>
+            </button> -->
           </div>
         </div>
         <div class="flex flex-col-reverse md:flex-row gap-4">
