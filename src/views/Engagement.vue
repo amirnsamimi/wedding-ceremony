@@ -2,7 +2,7 @@
 import dayjs from "dayjs";
 
 const today = dayjs();
-const weddingDay = dayjs("2024-09-21").diff(today, "days");
+const weddingDay = dayjs("2024-09-22").diff(today, "days");
 </script>
 <template>
   <nav class="p-4 flex gap-4 w-full justify-start">
