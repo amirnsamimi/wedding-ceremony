@@ -2,22 +2,15 @@
 import { RouterView } from "vue-router";
 import "./assets/main.css";
 import { onMounted, ref } from "vue";
-const sound = ref(false);
-const musicUrl = "/sound.mp3";
-const audio = new Audio(musicUrl);
-//move it to app vue
-const soundHandler = () => {
-  sound.value = !sound.value;
-  if (sound.value) {
-    audio.play();
-  } else {
-    audio.pause();
-  }
-};
+import { useSoundStore } from "./stores/sound";
+
+const soundStore = useSoundStore();
+  
+
 const showModal = ref(false);
 onMounted(() => {
   setTimeout(() => {
-    if(!sound.value){
+    if(!soundStore.getSound()){
       showModal.value = true;
     }
   }, 2000);
@@ -29,10 +22,10 @@ onMounted(() => {
 
 <template>
   <div class="absolute top-4 left-4">
-    <div v-if="sound" @click="soundHandler" class="relative z-50">
+    <div v-if="soundStore.getSound()" @click="soundStore.soundHandler()" class="relative z-50">
       <img src="/sound-on.svg" alt="sound" class="w-6 h-6" />
     </div>
-    <div v-else id="click" @click="soundHandler" class="relative z-50">
+    <div v-else id="click" @click="soundStore.soundHandler()" class="relative z-50">
       <img src="/sound-off.svg" alt="sound" class="w-6 h-6" />
     </div>
     <div

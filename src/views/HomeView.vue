@@ -1,4 +1,31 @@
-<script setup></script>
+<script setup>
+import { useSoundStore } from '@/stores/sound';
+import { useRouter } from 'vue-router';
+
+const soundStore = useSoundStore();
+const router = useRouter()
+
+const SoundHand = () => {
+
+  if(!soundStore.getSound()){
+  soundStore.soundHandler()
+
+  }
+  router.push("/engagement")
+ 
+}
+
+const locHand = () => {
+
+if(!soundStore.getSound()){
+soundStore.soundHandler()
+
+}
+router.push("/location")
+
+}
+
+</script>
 
 <template>
   <div
@@ -18,11 +45,10 @@
         <span class="text-[1rem] md:text-[1rem]"> AND </span>
         <h2 class="ml-24">Amir</h2>
       </div>
-      <nav class="p-4 flex gap-4 w-full justify-center">
-        <RouterLink class="bg-[#F3F2ED] px-4 py-2 rounded-xl" to="/engagement"
-          >عقد</RouterLink
-        >
-        <RouterLink class="bg-[#F3F2ED] px-4 py-2 rounded-xl" to="/location">لوکیشن</RouterLink>
+      <nav class="p-4 flex gap-4 w-full z-20 justify-center">
+        <button @click="SoundHand" class="bg-[#F3F2ED] px-4 py-2 rounded-xl" 
+          >عقد</button>
+        <button @click="locHand"  class="bg-[#F3F2ED] px-4 py-2 rounded-xl" to="/location">لوکیشن</button>
       </nav>
     </div>
   </div>
